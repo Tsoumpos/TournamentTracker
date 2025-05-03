@@ -174,6 +174,7 @@
             Margin = new Padding(5, 6, 5, 6);
             Name = "CreatePrizeForm";
             Text = "Create Prize";
+            Load += CreatePrizeForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
