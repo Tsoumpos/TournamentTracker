@@ -213,9 +213,9 @@
             prizesLabel.ForeColor = SystemColors.MenuHighlight;
             prizesLabel.Location = new Point(475, 303);
             prizesLabel.Name = "prizesLabel";
-            prizesLabel.Size = new Size(198, 37);
+            prizesLabel.Size = new Size(85, 37);
             prizesLabel.TabIndex = 22;
-            prizesLabel.Text = "Teams / Players";
+            prizesLabel.Text = "Prizes";
             // 
             // prizesListBox
             // 

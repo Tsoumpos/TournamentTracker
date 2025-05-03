@@ -1,6 +1,6 @@
 ﻿namespace TrackerUI
 {
-    partial class prizeAmountValue
+    partial class CreatePrizeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             createPrizeLabel = new Label();
-            firstNameValue = new TextBox();
+            placeNumberValue = new TextBox();
             placeNumberLabel = new Label();
-            textBox1 = new TextBox();
+            prizeAmountValue = new TextBox();
             prizeAmountLabel = new Label();
             placeNameValue = new TextBox();
             placeNameLabel = new Label();
@@ -52,12 +52,12 @@
             createPrizeLabel.TabIndex = 12;
             createPrizeLabel.Text = "Create Prize";
             // 
-            // firstNameValue
+            // placeNumberValue
             // 
-            firstNameValue.Location = new Point(228, 88);
-            firstNameValue.Name = "firstNameValue";
-            firstNameValue.Size = new Size(194, 35);
-            firstNameValue.TabIndex = 14;
+            placeNumberValue.Location = new Point(228, 88);
+            placeNumberValue.Name = "placeNumberValue";
+            placeNumberValue.Size = new Size(194, 35);
+            placeNumberValue.TabIndex = 14;
             // 
             // placeNumberLabel
             // 
@@ -70,12 +70,13 @@
             placeNumberLabel.TabIndex = 13;
             placeNumberLabel.Text = "Place Number";
             // 
-            // textBox1
+            // prizeAmountValue
             // 
-            textBox1.Location = new Point(228, 192);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(194, 35);
-            textBox1.TabIndex = 16;
+            prizeAmountValue.Location = new Point(228, 192);
+            prizeAmountValue.Name = "prizeAmountValue";
+            prizeAmountValue.Size = new Size(194, 35);
+            prizeAmountValue.TabIndex = 16;
+            prizeAmountValue.Text = "0";
             // 
             // prizeAmountLabel
             // 
@@ -112,6 +113,7 @@
             prizePercentageValue.Name = "prizePercentageValue";
             prizePercentageValue.Size = new Size(194, 35);
             prizePercentageValue.TabIndex = 20;
+            prizePercentageValue.Text = "0";
             // 
             // prizePercentageLabel
             // 
@@ -149,8 +151,9 @@
             createPrizeButton.TabIndex = 22;
             createPrizeButton.Text = "Create Prize";
             createPrizeButton.UseVisualStyleBackColor = true;
+            createPrizeButton.Click += createPrizeButton_Click;
             // 
-            // prizeAmountValue
+            // CreatePrizeForm
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -162,14 +165,14 @@
             Controls.Add(prizePercentageLabel);
             Controls.Add(placeNameValue);
             Controls.Add(placeNameLabel);
-            Controls.Add(textBox1);
+            Controls.Add(prizeAmountValue);
             Controls.Add(prizeAmountLabel);
-            Controls.Add(firstNameValue);
+            Controls.Add(placeNumberValue);
             Controls.Add(placeNumberLabel);
             Controls.Add(createPrizeLabel);
             Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 161);
             Margin = new Padding(5, 6, 5, 6);
-            Name = "prizeAmountValue";
+            Name = "CreatePrizeForm";
             Text = "Create Prize";
             ResumeLayout(false);
             PerformLayout();
@@ -178,9 +181,9 @@
         #endregion
 
         private Label createPrizeLabel;
-        private TextBox firstNameValue;
+        private TextBox placeNumberValue;
         private Label placeNumberLabel;
-        private TextBox textBox1;
+        private TextBox prizeAmountValue;
         private Label prizeAmountLabel;
         private TextBox placeNameValue;
         private Label placeNameLabel;
